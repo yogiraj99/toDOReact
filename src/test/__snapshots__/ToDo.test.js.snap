@@ -9,6 +9,7 @@ exports[`Should have all toDo items provided in list 1`] = `
     <li>
       <div
         className="toDoItem"
+        id="toDoItem20100"
       >
         <h4
           className="task"
@@ -18,11 +19,24 @@ exports[`Should have all toDo items provided in list 1`] = `
             Wake up early
           </del>
         </h4>
+        <button
+          className="editButton"
+          onClick={[Function]}
+        >
+          edit
+        </button>
+        <input
+          className="taskInput"
+          name="task"
+          onChange={[Function]}
+          value="Wake up early"
+        />
       </div>
     </li>
     <li>
       <div
         className="toDoItem"
+        id="toDoItem20101"
       >
         <h4
           className="task"
@@ -32,6 +46,18 @@ exports[`Should have all toDo items provided in list 1`] = `
             Sleep early
           </del>
         </h4>
+        <button
+          className="editButton"
+          onClick={[Function]}
+        >
+          edit
+        </button>
+        <input
+          className="taskInput"
+          name="task"
+          onChange={[Function]}
+          value="Sleep early"
+        />
       </div>
     </li>
   </ul>
@@ -47,6 +73,7 @@ exports[`Should have toDo item provided in list 1`] = `
     <li>
       <div
         className="toDoItem"
+        id="toDoItem20100"
       >
         <h4
           className="task"
@@ -56,6 +83,18 @@ exports[`Should have toDo item provided in list 1`] = `
             Wake up early
           </del>
         </h4>
+        <button
+          className="editButton"
+          onClick={[Function]}
+        >
+          edit
+        </button>
+        <input
+          className="taskInput"
+          name="task"
+          onChange={[Function]}
+          value="Wake up early"
+        />
       </div>
     </li>
   </ul>
