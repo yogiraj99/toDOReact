@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should have all toDo items provided in list 1`] = `
+<div
+  className="toDo"
+>
+  <h1 />
+  <ul>
+    <li>
+      <div
+        className="toDoItem"
+      >
+        <h4
+          className="task"
+          onClick={[Function]}
+        >
+          <del>
+            Wake up early
+          </del>
+        </h4>
+      </div>
+    </li>
+    <li>
+      <div
+        className="toDoItem"
+      >
+        <h4
+          className="task"
+          onClick={[Function]}
+        >
+          <del>
+            Sleep early
+          </del>
+        </h4>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Should have toDo item provided in list 1`] = `
+<div
+  className="toDo"
+>
+  <h1 />
+  <ul>
+    <li>
+      <div
+        className="toDoItem"
+      >
+        <h4
+          className="task"
+          onClick={[Function]}
+        >
+          <del>
+            Wake up early
+          </del>
+        </h4>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

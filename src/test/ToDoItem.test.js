@@ -2,30 +2,24 @@ import React from 'react';
 import ToDoItem from '../ToDoItem';
 import renderer from 'react-test-renderer';
 
-test('Should have className as "toDoItem" and should contain task', () => {
-  let state={task:"Wake up early", status:true};
-  const component = renderer.create(
-      <ToDoItem state={state}/>
-  );
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
-});
+test('Should have className as "task" and should contain task', () => {
+  let state = {task: "Wake up early"};
+  let result = renderer.create(<ToDoItem state={state}/>);
 
-test('Should have checkbox unchecked when status given as false', () => {
-  let state={task:"Wake up early", status:false};
-  const component = renderer.create(
-      <ToDoItem state={state}/>
-  );
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
+  expect(result.root.findByProps({className: "task"}));
+  expect(result.root.findByType('h4').children[0]).toBe("Wake up early");
 });
 
 
-test('Should have checkbox checked when status given as true', () => {
-  let state={task:"Wake up early", status:true};
-  const component = renderer.create(
-      <ToDoItem state={state}/>
-  );
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
+test('Should have task in tag "del" when task is done and status is true', () => {
+  let state = {task: "Wake up early",status:true};
+  let result = renderer.create(<ToDoItem state={state}/>);
+
+  expect(result.root.find(element => element.type==='del'));
+  expect(result.root.find(element => element.type==='del').props.children).toBe("Wake up early");
+});
+
+
+test('Should not have task in tag "del" when task is not done and status is false', () => {
+
 });
