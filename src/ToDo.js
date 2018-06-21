@@ -7,6 +7,7 @@ class ToDo extends Component {
     this.state = props.state;
     this.updateToDoItem = this.updateToDoItem.bind(this);
     this.updateStatus = this.updateStatus.bind(this);
+    this.getAllToDoItems = this.getAllToDoItems.bind(this);
   }
 
   render() {
@@ -22,7 +23,7 @@ class ToDo extends Component {
     let oldToDoItem = toDoItems.find((item) => item.id === toDoItem.id);
     let toDoItemIndex = toDoItems.indexOf(oldToDoItem);
     toDoItems[toDoItemIndex] = toDoItem;
-    this.setState({toDoItems:toDoItems})
+    this.setState({toDoItems:toDoItems});
     this.updateStatus();
   }
 

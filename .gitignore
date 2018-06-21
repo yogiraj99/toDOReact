@@ -23,3 +23,5 @@ yarn-error.log*
 .idea
 todo.iml
 package-lock.json
+dist/*
+/test/__snapshots__

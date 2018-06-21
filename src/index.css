@@ -23,3 +23,7 @@ button{
 .taskInput{
     display: none;
 }
+
+.saveButton{
+    display: none;
+}
